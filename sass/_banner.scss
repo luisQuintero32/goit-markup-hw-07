@@ -1,0 +1,192 @@
+@use 'colors' as colors;
+
+@mixin banner_title(){
+    width: 696px;
+    height: 120px;
+    font-family: 'roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: colors.$color_white;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 600px;
+    background: colors.$color_background_banner;
+    background: url("../imagenes/imag-banner.jpg");
+    background-blend-mode: overlay;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+
+    &__title{
+        @include banner_title();
+        z-index: 5;      
+    }
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: colors.$color_background_banneroverlay;
+        height: 100%;
+        width: 100%;
+    }
+    &__button{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        width: 261px;
+        height: 50px;
+        z-index: 6;
+        box-shadow: colors.$color_boxshadow_1;
+        border-radius: 4px;
+        gap: 8px;
+        
+
+        .buttom{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px; 
+        letter-spacing: 0.06em;
+        margin: 0 auto;
+        width: 261px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: colors.$color_boxshadow_1;
+        }
+        .buttom:hover{
+        background: colors.$color_hover;
+        color: colors.$color_white;
+        }
+    }
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: colors.$color_background_backdrop;
+    z-index: 10;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is__hidden{
+    // visibility: hidden;
+}
+.modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 528px;
+    height: 581px;
+    left: 400px;
+    top: 1px;
+    bottom: 100px;
+    z-index: 11;
+    background: colors.$color_white;
+    box-shadow: colors.$color_boxshadow_modal;
+    border-radius: 4px;
+
+    &__btn{
+        box-sizing: border-box;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin: 8px 8px 8px 480px;
+        border-color: colors.$color_fill_grey;
+        background-color: colors.$color_white;
+
+        .icon-x{
+        width: 12px;
+        height: 12px;
+        padding-top: 2px;
+        fill: colors.$color_fill_black;
+        }
+        .icon-x:hover{
+            fill: colors.$color_hover;
+        }
+    }
+    &__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: colors.$color_letter;
+    }
+    &__form{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        &__name{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: colors.$color_fill_grey;
+
+            .input__modal{
+            box-sizing: border-box;
+            width: 448px;
+            height: 40px;
+            padding-left: 40px;
+            margin-top: 4px;
+            border: colors.$color_border;
+            border-radius: 4px;
+            outline: none;
+            }
+            .svg__name{
+            position: absolute;
+            top: 36px;
+            left: 15px;
+            width: 12px;
+            height: 12px;
+
+                .input__tex{
+                width: 448px;
+                height: 120px;
+                margin-top: 4px;
+                box-sizing: border-box;
+                border: colors.$color_border;
+                border-radius: 4px;
+                outline: none;
+                }
+                .input-tex:hover,
+                .input-tex:focus{
+                    border-color: colors.$color_hover;
+                }
+            }
+            .input__modal:hover + .svg__name,
+            .input__modal:focus + .svg__name{
+                fill: colors.$color_hover;
+            }
+        }   
+    }
+}

@@ -144,4 +144,181 @@
 }
 .header__contact__tel .svg__tel:hover {
   fill: #2196F3;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 600px;
+  background: #2F303A;
+  background: url("../imagenes/imag-banner.jpg");
+  background-blend-mode: overlay;
+  position: relative;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+}
+.banner__title {
+  width: 696px;
+  height: 120px;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  z-index: 5;
+}
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.3215686275);
+  height: 100%;
+  width: 100%;
+}
+.banner__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  width: 261px;
+  height: 50px;
+  z-index: 6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  gap: 8px;
+}
+.banner__button .buttom {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  width: 261px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.banner__button .buttom:hover {
+  background: #2196F3;
+  color: #FFFFFF;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 528px;
+  height: 581px;
+  left: 400px;
+  top: 1px;
+  bottom: 100px;
+  z-index: 11;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal__btn {
+  box-sizing: border-box;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 8px 8px 8px 480px;
+  border-color: #757575;
+  background-color: #FFFFFF;
+}
+.modal__btn .icon-x {
+  width: 12px;
+  height: 12px;
+  padding-top: 2px;
+  fill: #000000;
+}
+.modal__btn .icon-x:hover {
+  fill: #2196F3;
+}
+.modal__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal__form__name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal__form__name .input__modal {
+  box-sizing: border-box;
+  width: 448px;
+  height: 40px;
+  padding-left: 40px;
+  margin-top: 4px;
+  border: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.modal__form__name .svg__name {
+  position: absolute;
+  top: 36px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+}
+.modal__form__name .svg__name .input__tex {
+  width: 448px;
+  height: 120px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.modal__form__name .svg__name .input-tex:hover,
+.modal__form__name .svg__name .input-tex:focus {
+  border-color: #2196F3;
+}
+.modal__form__name .input__modal:hover + .svg__name,
+.modal__form__name .input__modal:focus + .svg__name {
+  fill: #2196F3;
 }/*# sourceMappingURL=style.css.map */
