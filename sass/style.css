@@ -224,6 +224,10 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.is__hidden {
+  visibility: hidden;
+}
+
 .modal {
   position: absolute;
   display: flex;
@@ -294,25 +298,14 @@
   height: 40px;
   padding-left: 40px;
   margin-top: 4px;
-  border: rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   outline: none;
 }
 .modal__form__name .svg__name {
   position: absolute;
-  top: 36px;
+  top: 33px;
   left: 15px;
   width: 12px;
   height: 12px;
-}
-.modal__form__name .svg__name .input__tex {
-  width: 448px;
-  height: 120px;
-  margin-top: 4px;
-  box-sizing: border-box;
-  border: rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
 }
 .modal__form__name .svg__name .input-tex:hover,
 .modal__form__name .svg__name .input-tex:focus {
@@ -321,4 +314,147 @@
 .modal__form__name .input__modal:hover + .svg__name,
 .modal__form__name .input__modal:focus + .svg__name {
   fill: #2196F3;
+}
+.modal__form__name .input__modal:hover,
+.modal__form__name .input__modal:focus {
+  border-color: #2196F3;
+}
+.modal__form__name .input__tex:hover {
+  border-color: #2196F3;
+}
+.modal__form__check {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: row;
+  width: 448px;
+  margin-top: 20px;
+}
+.modal__form__check__label {
+  position: relative;
+  width: 400px;
+  height: 40px;
+  cursor: pointer;
+}
+.modal__form__check__label .custom__check {
+  position: absolute;
+  border-color: #757575;
+  display: inline;
+}
+.modal__form__check__label .custom__check__svg {
+  display: inline;
+  position: absolute;
+  display: none;
+  top: 1px;
+  left: 6px;
+  width: 13px;
+  height: 12px;
+  padding-top: 2px;
+  border: solid #2196F3;
+  background: #2196F3;
+  fill: #FFFFFF;
+}
+.modal__form__check__label .custom__check:hover {
+  background: #2196F3;
+  border: none;
+}
+.modal__form__check__label__text {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  margin-left: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal__form__check__label .input__check {
+  width: 50px;
+}
+.modal__form__send {
+  width: 200px;
+  height: 50px;
+  margin-top: 12px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border-color: #AFB1B8;
+  outline: none;
+  cursor: pointer;
+}
+.modal__form__send .letter__send {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.modal__form__send .letter__send:hover {
+  color: #FFFFFF;
+}
+.modal__form__send:hover, .modal__form__send:focus {
+  background-color: #2196F3;
+  border-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.quality {
+  width: 100vw;
+  height: 350PX;
+  background: #E5E5E5;
+}
+.quality__box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 82PX;
+  gap: 30px;
+  background: #F5F4FA;
+  list-style-type: none;
+}
+.quality__box1__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 270px;
+  margin-bottom: 99px;
+  background: #F5F4FA;
+}
+.quality__box1__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #E5E5E5;
+}
+.quality__box1__svg .icon__first {
+  width: 75px;
+  height: 70px;
+}
+.quality__box1__title1 {
+  width: 270px;
+  height: 16px;
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.quality__box1__paragraph1 {
+  width: 270px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }/*# sourceMappingURL=style.css.map */

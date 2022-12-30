@@ -414,10 +414,10 @@
     border-color: #2196F3;
 } */
 
-.input-modal:hover,
+/* .input-modal:hover,
 .input-modal:focus{
     border-color: #2196F3;
-}
+} */
 
 /* .svg-name{
     position: absolute;
@@ -443,7 +443,7 @@
     border-color: #2196F3;
 } */
 
-.container-group-check{
+/* .container-group-check{
     position: relative;
     display: flex;
     
@@ -451,31 +451,31 @@
     flex-direction: row;
     width: 448px;
     margin-top: 20px;
-}
+} */
 
-.container-group-check .label-name-check{
+/* .container-group-check .label-name-check{
     position: relative;
     width: 400px;
     height: 40px; 
     cursor: pointer;
-}
+} */
 
-.container-group-check .label-name-check ,.custom-check{
+/* .container-group-check .label-name-check .custom-check{
     border-color: solid #757575;
     display: inline;
     
-}
+} */
 
-.container-group-check .label-name-check input:checked + .custom-check:hover{
+/* .container-group-check .label-name-check input:checked + .custom-check:hover{
     background: #2196F3;
     border: none;
- }
+ } */
 
-.container-group-check .label-name-check input:checked + .custom-check .svg-name-check{
+/* .container-group-check .label-name-check input:checked + .custom-check .svg-name-check{
     display: inline;
-}
+} */
 
-.container-group-check .label-name-check .custom-text {
+/* .container-group-check .label-name-check .custom-text {
     position: absolute;
     left: 12px;
     top: 0px;
@@ -488,9 +488,9 @@
     letter-spacing: 0.03em;
 
     color: #757575;
-}
+} */
 
-.container-group-check .label-name-check .custom-check .svg-name-check{
+/* .container-group-check .label-name-check .custom-check .svg-name-check{
     position: absolute; 
     display: none;
     top: 1px;
@@ -501,15 +501,15 @@
     border: solid #2196F3;
     background: #2196F3;
     fill: #FFFFFF;
-}
+} */
 
-.container-group-check .label-name-check input{
+/* .container-group-check .label-name-check input{
     position: absolute;
     top: 5px;
     left: 8px;
-}
+} */
 
-.modal .button-send{
+/* .modal .button-send{
     width: 200px;
     height: 50px;
     margin-top: 12px;
@@ -518,21 +518,21 @@
     border-color: #AFB1B8;
     outline: none;
     cursor: pointer;
-}
+} */
 
-.modal .button-send:hover,
+/* .modal .button-send:hover,
 .modal .button-send:focus{
     background-color: #2196F3;
     border-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
-.modal .button-send span:hover,
+/* .modal .button-send span:hover,
 .modal .button-send span:focus{
     color: #FFFFFF;
-}
+} */
 
-.button-send span{
+/* .button-send span{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -541,46 +541,46 @@
     letter-spacing: 0.06em;
 
     color: #000000;
-}
+} */
 
                             /* section 2*/
-.quality{
+/* .quality{
     width: 100vw;
     height: 350PX;
     background: #E5E5E5;
     
-}
-.quality ul{
+} */
+/* .quality ul{
     
     display: flex; 
     align-items: center;
     justify-content: center;
-}
+} */
 
-.quality .box-quality{
+/* .quality .box-quality{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     
 
-}
+} */
 
-.quality .box1-quality{
+/* .quality .box1-quality{
     padding-top: 82PX;
     gap: 30px;
     background: #F5F4FA;
     
-}
+} */
 
-.quality .box1-quality .box-quality{
+/* .quality .box1-quality .box-quality{
     
     width: 270px;
     margin-bottom: 99px;
     background: #F5F4FA;
-}
+} */
 
-.quality .box1-quality .box-quality div{
+/* .quality .box1-quality .box-quality div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -588,29 +588,25 @@
     margin-bottom: 30px;
     
     background: #E5E5E5;
-}
+} */
 
 
-.quality .box1-quality .box-quality svg{
+/* .quality .box1-quality .box-quality svg{
     width: 27Opx;
     height: 120px;   
     
-} 
+}  */
 
-.icon-first{
+/* .icon-first{
     width: 75px;
     height: 70px;
-}
-
-.box-quality{
-    width: 270px;
-}
+} */
 
 .special-box{
     padding-top: 24px;
 }
 
-.title-1p{
+/* .title-1p{
     width: 270px;
     height: 16px;
 
@@ -623,7 +619,7 @@
 
 
     color: #212121;
-}                            
+}                             */
 
 .paragraph-1{
 width: 270px;
