@@ -4,6 +4,9 @@
     width: 75px;
     height: 70px;
 }
+.--separator{
+    margin-bottom: 5px;
+}
 
 @mixin title(){
     width: 270px;
@@ -44,26 +47,28 @@
         &__box{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
         width: 270px;
+        height: 270px;
         margin-bottom: 99px;
         background: colors.$color_background-buttom;
-        }
+        
             &__svg{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 270px;
-            height: 120px;
-            margin-bottom: 30px;
-            background: colors.$color_background_white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 270px;
+                height: 120px;
+                margin-bottom: 30px;
+                background: colors.$color_background_white;
+                
 
                 .icon__first{
                     @include icon__first();
                 }
             }
-        
+        }
         &__title1{
             @include title();
         }
