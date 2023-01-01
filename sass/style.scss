@@ -4,4 +4,9 @@
 @use './galery';
 @use './team';
 @use './customers';
-@use './footer'
+@use './footer';
+
+@use './portafolio-header';
+@use './portafolio-button';
+@use './portafolio-card';
+@use './portafolio-footer';
